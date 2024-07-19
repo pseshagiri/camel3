@@ -1,0 +1,16 @@
+server:
+ port: 9092
+camel:
+ component:
+  servlet:
+   mapping:
+    contextPath: /rest/*
+
+spring:
+ application:
+  name: camel-rest
+ datasource:
+  driverClassName: org.h2.Driver
+  url: jdbc:h2:mem:bookdb
+  username: sa
+  password: 
